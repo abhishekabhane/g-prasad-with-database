@@ -1,0 +1,789 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(img/back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+
+/************  
+    NAVBAR
+************/
+
+.navbar {
+    padding: 1px 0px 1px 0px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 30px grey;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+#navbar {
+    background-color: white !important;
+    box-shadow: 0px 0px 30px grey;
+}
+
+#navbar1 {
+    background-color: white !important;
+    box-shadow: 0px 0px 30px grey;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.navbar-brand {
+    font-size: 27px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.navbar-brand:hover {
+    color: black;
+    text-shadow: 1px 1px 10px white;
+    font-weight: lighter;
+}
+
+.nav-item {
+    margin-right: 15px;
+}
+
+.nav-link {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: #f1c111;
+    text-shadow: 2px 2px 10px white;
+    font-weight: lighter;
+}
+
+.navbar-fixed-top.scrolled {
+    background-color: rgb(44, 44, 44) !important;
+    transition: background-color 200ms linear;
+}
+
+.navbar-nav .navbar-toggler-icon {
+    background: none;
+}
+
+.navbar-toggler {
+    border: #0c8195;
+    padding: 0;
+    cursor: pointer;
+    margin: 0 0 0 0;
+    width: 30px;
+    height: 35px;
+    outline: none !important;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background: transparent;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before,
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+    transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
+    transition: top 300ms 50ms ease, transform 300ms 350ms ease;
+    transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
+    top: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+    transform: rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+    transform: rotate(-45deg);
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background: black;
+    transition: 10ms 300ms ease;
+    display: block;
+    width: 30px;
+    height: 2px;
+    position: relative;
+    border: #0c8195;
+}
+
+.navbar-toggler .navbar-toggler-icon::before,
+.navbar-toggler .navbar-toggler-icon::after {
+    transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
+    transition: top 300ms 350ms ease, transform 300ms 50ms ease;
+    transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+    position: absolute;
+    right: 0;
+    left: 0;
+    background: black;
+    width: 30px;
+    height: 2px;
+    content: '';
+    border: none !important;
+}
+
+.navbar-toggler .navbar-toggler-icon::before {
+    top: -8px;
+}
+
+.navbar-toggler .navbar-toggler-icon::after {
+    top: 8px;
+}
+
+
+/************  
+    HOME
+************/
+
+.heading {
+    margin-bottom: 450px;
+    text-align: left;
+}
+
+.heading h5 {
+    font-weight: 800;
+    font-size: 55px;
+}
+
+#carouselExampleCaptions {
+    background-color: black;
+}
+
+
+/************  
+    ABOUT
+************/
+
+.about {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+#about-content {
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+#about-content h2 {
+    font-size: 45px;
+    color: #a3830d;
+}
+
+#about-content p {
+    font-size: 18px;
+    word-spacing: 3px;
+}
+
+.about img {
+    border-radius: 25px;
+    width: 100%;
+    /* height: 500px; */
+}
+
+#about-img {
+    margin: 80px 0px 30px 0px;
+}
+
+
+/************  
+    WORKS
+************/
+
+.works {
+    padding-top: 50px;
+    color: black;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.works h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 35px;
+    padding-top: 50px;
+}
+
+.works h6 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #f1c111;
+}
+
+.values {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.values h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 35px;
+    padding-top: 50px;
+}
+
+.values h6 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #f1c111;
+}
+
+
+/************  
+    PRODUCTS
+************/
+
+.products {
+    background-color: white;
+}
+
+.products h4 {
+    text-align: center;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding-top: 100px;
+    color: black;
+}
+
+
+/************  
+    certification
+************/
+
+.certification {
+    background-color: white;
+}
+
+.certification h4 {
+    text-align: center;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding-top: 100px;
+    color: #a3830d;
+}
+
+.carousel-cell {
+    width: 70%;
+    /* flex-box, center image in cell */
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.carousel-cell img,
+.carousel-cell h1,
+.carousel-cell p {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    /* dim unselected */
+    opacity: 0.7;
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
+    transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+}
+
+.carousel-cell .product-details img {
+    width: 90% !important;
+    box-shadow: 0px 0px 30px black;
+}
+
+.carousel-cell h1 {
+    transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+    text-align: center;
+    font-size: larger;
+}
+
+.carousel-cell p {
+    display: none;
+}
+
+
+/* brighten selected image */
+
+.carousel-cell.is-selected img,
+.carousel-cell.is-selected h1,
+.carousel-cell.is-selected p {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: none;
+    filter: none;
+    height: fit-content;
+}
+
+.carousel-cell.is-selected h1 {
+    font-size: 25px;
+    color: orangered;
+}
+
+
+/* buttons, no circle */
+
+.flickity-prev-next-button {
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    opacity: 0.6;
+}
+
+.flickity-prev-next-button:hover {
+    background: transparent;
+    opacity: 1;
+}
+
+
+/* arrow color */
+
+.flickity-prev-next-button .arrow {
+    fill: black;
+}
+
+.flickity-prev-next-button.no-svg {
+    color: black;
+}
+
+
+/* closer to edge */
+
+.flickity-prev-next-button.previous {
+    left: 0;
+}
+
+.flickity-prev-next-button.next {
+    right: 0;
+}
+
+
+/* hide disabled button */
+
+.flickity-prev-next-button:disabled {
+    display: none;
+}
+
+
+/************  
+    FOOTER
+************/
+
+.site-footer {
+    background: #171819;
+    padding: 7em 0 2em 0;
+}
+
+.site-footer a {
+    color: #666262;
+}
+
+.site-footer a:hover,
+.footer-icon {
+    color: #f1c111;
+}
+
+.footer-link li {
+    display: inline-block !important;
+    list-style: none;
+    margin: 0 10px;
+}
+
+.copyright-text,
+.footer-link,
+.site-footer .social-icon {
+    margin-top: 6em;
+}
+
+.copyright-text {
+    margin-top: 5.3em;
+}
+
+.social-icon {
+    position: relative;
+    padding: 0;
+    margin: 4em 0 0 0;
+}
+
+.social-icon li {
+    display: inline-block;
+    list-style: none;
+}
+
+.social-icon li a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    text-align: center;
+}
+
+#contactinfo {
+    color: #666262;
+}
+
+
+/************  
+    company
+************/
+
+.company-head {
+    background-color: black;
+    font-family: cursive;
+}
+
+.company-head .container {
+    text-align: center;
+    padding: 120px 0px 40px 0px;
+    color: #f1c111;
+}
+
+.connect {
+    background-color: white;
+    padding-top: 50px;
+}
+
+.connect h6 {
+    font-weight: 100;
+    font-size: 35px;
+}
+
+.connect p a {
+    color: black;
+    text-decoration: none;
+}
+
+.history {
+    background-color: white;
+}
+
+.history {
+    text-align: center;
+    padding-top: 100px;
+    overflow-x: hidden;
+}
+
+.history h2 {
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #a3830d;
+}
+
+.history p {
+    text-align: left;
+}
+
+.history .row img {
+    width: 400px;
+}
+
+.his h5 {
+    color: #a3830d;
+    font-size: 25px;
+}
+
+
+/************  
+    certification page
+************/
+
+.certi {
+    background-color: white;
+}
+
+.certi .container {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.certi .container h2 {
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #a3830d;
+}
+
+.certi .container p {
+    color: #a1882d;
+}
+
+.certi .container .card {
+    border: 1px solid orangered;
+    margin: 0 auto;
+}
+
+.card-text {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.card-head1 h2 {
+    color: blue;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.card-head1 h3 {
+    color: orangered;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+
+.card-head1 h6 {
+    color: grey;
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/************  
+    contact
+************/
+
+#jumbotron {
+    background-image: url('img/contact.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.jumbotron {
+    padding-top: 250px;
+    padding-bottom: 100px;
+    color: white;
+}
+
+#requirement {
+    font-weight: 100;
+}
+
+.display-6 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.lead {
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.lead a {
+    color: white;
+    text-decoration: none;
+}
+
+.lead a:hover {
+    color: #f1c111;
+}
+
+#contact-section {
+    padding: 50px;
+    background-color: white;
+}
+
+.mail {
+    color: #171819;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.mail:hover {
+    color: #f1c111;
+}
+
+.contact-detailed {
+    font-size: 18px;
+    font-weight: 50;
+    font-family: sans-serif;
+    opacity: 0.7;
+}
+
+.inputbar {
+    padding: 18px;
+}
+
+.inputbar input {
+    border: none !important;
+    background-color: #f0f8ff;
+    padding: 15px;
+}
+
+.inputbar textarea {
+    border: none;
+    background-color: #f0f8ff;
+    padding: 15px;
+}
+
+.inputbar button {
+    border-radius: 100px;
+    background-color: #f1c111 !important;
+    color: white;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.input:focus {
+    outline: none !important;
+}
+
+.social-links {
+    background-color: grey;
+}
+
+.social-links {
+    padding: 25px 0px 25px 0px;
+    text-align: center;
+}
+
+.social-links h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: orange;
+}
+
+.social-links p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+/************  
+    RESPONSIVE
+************/
+
+@media screen and ( max-width: 768px) {
+    .carousel-cell {
+        height: 400px;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .copyright-text,
+    .social-icon {
+        margin-top: unset !important;
+    }
+    .social-icon {
+        margin-bottom: 6em;
+    }
+    .about img {
+        width: 80%;
+    }
+    .certi .container .card {
+        margin: 0 auto;
+        margin-bottom: 20px !important;
+    }
+    .wooden .container .card {
+        margin-bottom: 20px !important;
+    }
+    .product-details h1 {
+        font-size: 22px !important;
+        margin-top: 10px;
+    }
+    .products h4 {
+        font-size: 25px !important;
+    }
+    .history .container .row img {
+        width: 300px !important;
+    }
+    .history {
+        overflow-x: hidden !important;
+    }
+    .navbar-brand img {
+        width: 150px;
+        height: 70px;
+    }
+    .wooden p {
+        padding-top: 15px;
+    }
+}
+
+@media screen and ( min-width: 960px) {
+    .carousel-cell {
+        width: 60%;
+    }
+}
+
+
+/************  
+    Handicraft
+************/
+
+.wooden {
+    background-color: white;
+    padding-top: 75px;
+    text-align: center;
+    padding-bottom: 75px;
+    overflow-x: hidden;
+    overflow-y: hidden !important;
+}
+
+.wooden p {
+    font-size: 18px;
+}
+
+.wooden .container .card {
+    border: 1px solid orangered;
+    /* border: none; */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.wooden .container .card img:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+
+.wooden .container #wooden3 {
+    opacity: 0.7;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 15px 15px 40px grey;
+}
+
+.wooden .container #wooden3:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+    opacity: 1;
+}
+
+.wooden .container h4 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wooden .container .card-text {
+    padding: 15px 0px 15px 0px;
+    color: #a3830d;
+    font-size: 22px;
+}
